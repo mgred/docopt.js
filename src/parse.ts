@@ -1,4 +1,4 @@
-import { TokenStream } from "./token.ts";
+import { TokenStream } from "./token";
 import {
   AnyOptions,
   Argument,
@@ -9,9 +9,9 @@ import {
   Optional,
   Pattern,
   Required,
-} from "./pattern.ts";
-import { DocoptLanguageError, Exit } from "./error.ts";
-import { eachSlice, stringPartition } from "./utils.ts";
+} from "./pattern";
+import { DocoptLanguageError, Exit } from "./error";
+import { eachSlice, stringPartition } from "./utils";
 
 export const parseArgv = (
   tokens: TokenStream,
@@ -151,7 +151,7 @@ const parseExpr = (tokens: TokenStream, options: Option[]): Pattern[] => {
   while (tokens.current() === "|") {
     tokens.move();
     seq = parseSeq(tokens, options);
-    result = result.concat(seq.length > 1 ? [new Required(...seq)] : seq);
+    result = result.concat(seq.length > 1 ? [new Required(...seq)] : []);
   }
   return result.length > 1 ? [new Either(...result)] : result;
 };

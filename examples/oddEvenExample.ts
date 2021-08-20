@@ -1,4 +1,4 @@
-import docopt from "../mod.ts";
+import docopt from "../mod";
 
 const doc = `
 Usage: ${import.meta.url} [-h | --help] (ODD EVEN)...

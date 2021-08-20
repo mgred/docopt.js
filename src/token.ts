@@ -1,5 +1,5 @@
-import { Constructor } from "./utils.ts";
-import { Exit } from "./error.ts";
+import { Constructor } from "./utils";
+import { Exit } from "./error";
 
 export class TokenStream extends Array<string> {
   constructor(

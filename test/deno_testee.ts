@@ -1,4 +1,4 @@
-import docopt from "../mod.ts";
+import docopt from "../mod";
 
 Deno
   .readAll(Deno.stdin)

@@ -1,4 +1,4 @@
-import { Constructor, stringPartition, uniqueMap, Value } from "./utils.ts";
+import { Constructor, stringPartition, uniqueMap, Value } from "./utils";
 
 type MatchResult = [boolean, Pattern[], ChildPattern[]];
 

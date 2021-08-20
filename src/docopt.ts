@@ -2,12 +2,12 @@
  * Copyright (c) 2020 Eyal Shalev <eyalsh@gmail.com>
  */
 
-import {processArgv} from "./interoperability.ts";
-import { DocoptLanguageError, Exit } from "./error.ts";
-import { unique, uniqueMap, Value } from "./utils.ts";
-import { AnyOptions, ChildPattern, Option } from "./pattern.ts";
-import { TokenStream } from "./token.ts";
-import { parseArgv, parseDefaults, parsePattern } from "./parse.ts";
+import {processArgv} from "./interoperability";
+import { DocoptLanguageError, Exit } from "./error";
+import { unique, uniqueMap, Value } from "./utils";
+import { AnyOptions, ChildPattern, Option } from "./pattern";
+import { TokenStream } from "./token";
+import { parseArgv, parseDefaults, parsePattern } from "./parse";
 
 export const VERSION = "1.0.7";
 

@@ -1,4 +1,4 @@
-import docopt from "../mod.ts";
+import docopt from "../mod";
 
 const doc = `
 Example of program which uses [options] shortcut in pattern.

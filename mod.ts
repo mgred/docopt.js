@@ -1,3 +1,3 @@
-import docopt from "./src/docopt.ts";
+import docopt from "./src/docopt";
 
 export default docopt;
